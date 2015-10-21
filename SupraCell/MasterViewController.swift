@@ -1,6 +1,6 @@
 //
 //  MasterViewController.swift
-//  SupraCell
+//  CustomSwipeCell
 //
 //  Created by Richard Fox on 10/18/15.
 //  Copyright © 2015 OpenSource. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-let cellIdentifier = "SupraCell"
+let cellIdentifier = "CustomSwipeCell"
 
 class MasterViewController: UITableViewController {
 
@@ -73,11 +73,11 @@ class MasterViewController: UITableViewController {
         return objects.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> SupraCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> CustomSwipeCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
         cell.userInteractionEnabled = true
 
-        return cell as! SupraCell
+        return cell as! CustomSwipeCell
     }
 
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

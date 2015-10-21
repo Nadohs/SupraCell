@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDA5C2D11BD75D7F0068BFFE /* CustomSwipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5C2D01BD75D7F0068BFFE /* CustomSwipeCell.swift */; settings = {ASSET_TAGS = (); }; };
 		BDB06E271BD4A95B006B4929 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB06E261BD4A95B006B4929 /* AppDelegate.swift */; };
 		BDB06E291BD4A95B006B4929 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB06E281BD4A95B006B4929 /* MasterViewController.swift */; };
 		BDB06E2B1BD4A95B006B4929 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB06E2A1BD4A95B006B4929 /* DetailViewController.swift */; };
@@ -14,10 +15,11 @@
 		BDB06E301BD4A95B006B4929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB06E2F1BD4A95B006B4929 /* Assets.xcassets */; };
 		BDB06E331BD4A95B006B4929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB06E311BD4A95B006B4929 /* LaunchScreen.storyboard */; };
 		BDB06E3C1BD4A998006B4929 /* SupraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB06E3A1BD4A998006B4929 /* SupraCell.swift */; settings = {ASSET_TAGS = (); }; };
-		BDB06E3D1BD4A998006B4929 /* SupraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDB06E3B1BD4A998006B4929 /* SupraCell.xib */; settings = {ASSET_TAGS = (); }; };
+		BDB06E3D1BD4A998006B4929 /* CustomSwipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDB06E3B1BD4A998006B4929 /* CustomSwipeCell.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BDA5C2D01BD75D7F0068BFFE /* CustomSwipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSwipeCell.swift; sourceTree = "<group>"; };
 		BDB06E231BD4A95B006B4929 /* SupraCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupraCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB06E261BD4A95B006B4929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDB06E281BD4A95B006B4929 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +29,7 @@
 		BDB06E321BD4A95B006B4929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDB06E341BD4A95B006B4929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDB06E3A1BD4A998006B4929 /* SupraCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupraCell.swift; sourceTree = "<group>"; };
-		BDB06E3B1BD4A998006B4929 /* SupraCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SupraCell.xib; sourceTree = "<group>"; };
+		BDB06E3B1BD4A998006B4929 /* CustomSwipeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSwipeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,8 @@
 			children = (
 				BDB06E261BD4A95B006B4929 /* AppDelegate.swift */,
 				BDB06E3A1BD4A998006B4929 /* SupraCell.swift */,
-				BDB06E3B1BD4A998006B4929 /* SupraCell.xib */,
+				BDA5C2D01BD75D7F0068BFFE /* CustomSwipeCell.swift */,
+				BDB06E3B1BD4A998006B4929 /* CustomSwipeCell.xib */,
 				BDB06E281BD4A95B006B4929 /* MasterViewController.swift */,
 				BDB06E2A1BD4A95B006B4929 /* DetailViewController.swift */,
 				BDB06E2C1BD4A95B006B4929 /* Main.storyboard */,
@@ -131,7 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDB06E331BD4A95B006B4929 /* LaunchScreen.storyboard in Resources */,
-				BDB06E3D1BD4A998006B4929 /* SupraCell.xib in Resources */,
+				BDB06E3D1BD4A998006B4929 /* CustomSwipeCell.xib in Resources */,
 				BDB06E301BD4A95B006B4929 /* Assets.xcassets in Resources */,
 				BDB06E2E1BD4A95B006B4929 /* Main.storyboard in Resources */,
 			);
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDB06E2B1BD4A95B006B4929 /* DetailViewController.swift in Sources */,
+				BDA5C2D11BD75D7F0068BFFE /* CustomSwipeCell.swift in Sources */,
 				BDB06E3C1BD4A998006B4929 /* SupraCell.swift in Sources */,
 				BDB06E291BD4A95B006B4929 /* MasterViewController.swift in Sources */,
 				BDB06E271BD4A95B006B4929 /* AppDelegate.swift in Sources */,
