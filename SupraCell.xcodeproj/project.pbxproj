@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDB06E271BD4A95B006B4929 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB06E261BD4A95B006B4929 /* AppDelegate.swift */; };
+		BDB06E291BD4A95B006B4929 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB06E281BD4A95B006B4929 /* MasterViewController.swift */; };
+		BDB06E2B1BD4A95B006B4929 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB06E2A1BD4A95B006B4929 /* DetailViewController.swift */; };
+		BDB06E2E1BD4A95B006B4929 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB06E2C1BD4A95B006B4929 /* Main.storyboard */; };
+		BDB06E301BD4A95B006B4929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB06E2F1BD4A95B006B4929 /* Assets.xcassets */; };
+		BDB06E331BD4A95B006B4929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB06E311BD4A95B006B4929 /* LaunchScreen.storyboard */; };
+		BDB06E3C1BD4A998006B4929 /* SupraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB06E3A1BD4A998006B4929 /* SupraCell.swift */; settings = {ASSET_TAGS = (); }; };
+		BDB06E3D1BD4A998006B4929 /* SupraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDB06E3B1BD4A998006B4929 /* SupraCell.xib */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BDB06E231BD4A95B006B4929 /* SupraCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupraCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB06E261BD4A95B006B4929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDB06E281BD4A95B006B4929 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		BDB06E2A1BD4A95B006B4929 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BDB06E2D1BD4A95B006B4929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDB06E2F1BD4A95B006B4929 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDB06E321BD4A95B006B4929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDB06E341BD4A95B006B4929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB06E3A1BD4A998006B4929 /* SupraCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupraCell.swift; sourceTree = "<group>"; };
+		BDB06E3B1BD4A998006B4929 /* SupraCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SupraCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDB06E201BD4A95B006B4929 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDB06E1A1BD4A95B006B4929 = {
+			isa = PBXGroup;
+			children = (
+				BDB06E251BD4A95B006B4929 /* SupraCell */,
+				BDB06E241BD4A95B006B4929 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDB06E241BD4A95B006B4929 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDB06E231BD4A95B006B4929 /* SupraCell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDB06E251BD4A95B006B4929 /* SupraCell */ = {
+			isa = PBXGroup;
+			children = (
+				BDB06E261BD4A95B006B4929 /* AppDelegate.swift */,
+				BDB06E3A1BD4A998006B4929 /* SupraCell.swift */,
+				BDB06E3B1BD4A998006B4929 /* SupraCell.xib */,
+				BDB06E281BD4A95B006B4929 /* MasterViewController.swift */,
+				BDB06E2A1BD4A95B006B4929 /* DetailViewController.swift */,
+				BDB06E2C1BD4A95B006B4929 /* Main.storyboard */,
+				BDB06E2F1BD4A95B006B4929 /* Assets.xcassets */,
+				BDB06E311BD4A95B006B4929 /* LaunchScreen.storyboard */,
+				BDB06E341BD4A95B006B4929 /* Info.plist */,
+			);
+			path = SupraCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDB06E221BD4A95B006B4929 /* SupraCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB06E371BD4A95B006B4929 /* Build configuration list for PBXNativeTarget "SupraCell" */;
+			buildPhases = (
+				BDB06E1F1BD4A95B006B4929 /* Sources */,
+				BDB06E201BD4A95B006B4929 /* Frameworks */,
+				BDB06E211BD4A95B006B4929 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SupraCell;
+			productName = SupraCell;
+			productReference = BDB06E231BD4A95B006B4929 /* SupraCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDB06E1B1BD4A95B006B4929 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = OpenSource;
+				TargetAttributes = {
+					BDB06E221BD4A95B006B4929 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = BDB06E1E1BD4A95B006B4929 /* Build configuration list for PBXProject "SupraCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDB06E1A1BD4A95B006B4929;
+			productRefGroup = BDB06E241BD4A95B006B4929 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDB06E221BD4A95B006B4929 /* SupraCell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDB06E211BD4A95B006B4929 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB06E331BD4A95B006B4929 /* LaunchScreen.storyboard in Resources */,
+				BDB06E3D1BD4A998006B4929 /* SupraCell.xib in Resources */,
+				BDB06E301BD4A95B006B4929 /* Assets.xcassets in Resources */,
+				BDB06E2E1BD4A95B006B4929 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDB06E1F1BD4A95B006B4929 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB06E2B1BD4A95B006B4929 /* DetailViewController.swift in Sources */,
+				BDB06E3C1BD4A998006B4929 /* SupraCell.swift in Sources */,
+				BDB06E291BD4A95B006B4929 /* MasterViewController.swift in Sources */,
+				BDB06E271BD4A95B006B4929 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BDB06E2C1BD4A95B006B4929 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDB06E2D1BD4A95B006B4929 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDB06E311BD4A95B006B4929 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDB06E321BD4A95B006B4929 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDB06E351BD4A95B006B4929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDB06E361BD4A95B006B4929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDB06E381BD4A95B006B4929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SupraCell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OpenSource.SupraCell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDB06E391BD4A95B006B4929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SupraCell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OpenSource.SupraCell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDB06E1E1BD4A95B006B4929 /* Build configuration list for PBXProject "SupraCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB06E351BD4A95B006B4929 /* Debug */,
+				BDB06E361BD4A95B006B4929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB06E371BD4A95B006B4929 /* Build configuration list for PBXNativeTarget "SupraCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB06E381BD4A95B006B4929 /* Debug */,
+				BDB06E391BD4A95B006B4929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDB06E1B1BD4A95B006B4929 /* Project object */;
+}
