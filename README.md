@@ -38,7 +38,7 @@ If the xib name and cellIdentifer name are the same can use `tableView.useCell(i
 
 Cell is separated into 3 views
 
-|---leftView---||---mainView--||---rightView--|
+**|---leftView---||---mainView--||---rightView--|**
 
 These views adjust to fit the tableView, so you should use autolayouts to constrain your views within these.
 
