@@ -27,7 +27,9 @@ SupraCell is cell/xib template designed to make swipe-able cell design easier by
 
   * Add cell to UITableView in the normal way etc.
 If the xib name and cellIdentifer name are the same can use `tableView.useCell(identifier:String)`
-**NOTE:**template makes these the same by default
+
+**NOTE:** template makes these the same by default
+
 ` tableView.useCell("FirstSupraCell")`
 
 ###Design
