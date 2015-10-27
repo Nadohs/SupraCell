@@ -21,7 +21,7 @@ SupraCell is cell/xib template designed to make swipe-able cell design easier by
 
   * Create a new file and select the SupraCell tab.
 
-  * Before creating your first NewSupraCell from template create a BaseSupraCell to add the base class for your custom cell class.
+  * Before creating your first **NewSupraCell** from template create a **BaseSupraCell** to add the base class for your custom cell class.
 
   * Create a NewSupraCell from template, and design cell in xib [(see design section)](#Design) 
 
