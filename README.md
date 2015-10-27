@@ -10,7 +10,7 @@ SupraCell is cell/xib template designed to make swipe-able cell design easier by
 
 
 ###Installation
-1)Move contents of *Template* folder into the path below, replacing USERNAME with yours.
+  * Move contents of *Template* folder into the path below, replacing USERNAME with yours.
 **~/Users/USERNAME/Library/Developer/Xcode/Templates/**
 
 ###Usage
