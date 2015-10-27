@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___ : CustomSwipeCell {
+class ___FILEBASENAMEASIDENTIFIER___ : SupraCell {
 
 
 

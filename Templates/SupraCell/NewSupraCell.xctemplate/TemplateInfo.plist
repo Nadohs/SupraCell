@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Easier way to design swipable UITableViewCells</string>
+	<string>Easier way to design swipable UITableViewCells **(Create Base SupraCell once with other template before creating your cell)</string>
 	<key>MainTemplateFile</key>
 	<string>___FILEBASENAME___</string>
 	<key>SortOrder</key>

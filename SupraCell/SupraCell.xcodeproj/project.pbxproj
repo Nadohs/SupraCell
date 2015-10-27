@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD36A1C41BD7657800871F07 /* CustomSupraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD36A1C21BD7657800871F07 /* CustomSupraCell.swift */; settings = {ASSET_TAGS = (); }; };
+		BD36A1C51BD7657800871F07 /* CustomSupraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD36A1C31BD7657800871F07 /* CustomSupraCell.xib */; settings = {ASSET_TAGS = (); }; };
 		BDA5C2D11BD75D7F0068BFFE /* CustomSwipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5C2D01BD75D7F0068BFFE /* CustomSwipeCell.swift */; settings = {ASSET_TAGS = (); }; };
+		BDA5C2D31BD763700068BFFE /* SupraExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5C2D21BD763700068BFFE /* SupraExtensions.swift */; settings = {ASSET_TAGS = (); }; };
 		BDB06E271BD4A95B006B4929 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB06E261BD4A95B006B4929 /* AppDelegate.swift */; };
 		BDB06E291BD4A95B006B4929 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB06E281BD4A95B006B4929 /* MasterViewController.swift */; };
 		BDB06E2B1BD4A95B006B4929 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB06E2A1BD4A95B006B4929 /* DetailViewController.swift */; };
@@ -19,7 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD36A1C21BD7657800871F07 /* CustomSupraCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSupraCell.swift; sourceTree = "<group>"; };
+		BD36A1C31BD7657800871F07 /* CustomSupraCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSupraCell.xib; sourceTree = "<group>"; };
 		BDA5C2D01BD75D7F0068BFFE /* CustomSwipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSwipeCell.swift; sourceTree = "<group>"; };
+		BDA5C2D21BD763700068BFFE /* SupraExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupraExtensions.swift; sourceTree = "<group>"; };
 		BDB06E231BD4A95B006B4929 /* SupraCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupraCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB06E261BD4A95B006B4929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDB06E281BD4A95B006B4929 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +70,9 @@
 			children = (
 				BDB06E261BD4A95B006B4929 /* AppDelegate.swift */,
 				BDB06E3A1BD4A998006B4929 /* SupraCell.swift */,
+				BD36A1C21BD7657800871F07 /* CustomSupraCell.swift */,
+				BD36A1C31BD7657800871F07 /* CustomSupraCell.xib */,
+				BDA5C2D21BD763700068BFFE /* SupraExtensions.swift */,
 				BDA5C2D01BD75D7F0068BFFE /* CustomSwipeCell.swift */,
 				BDB06E3B1BD4A998006B4929 /* CustomSwipeCell.xib */,
 				BDB06E281BD4A95B006B4929 /* MasterViewController.swift */,
@@ -137,6 +146,7 @@
 				BDB06E3D1BD4A998006B4929 /* CustomSwipeCell.xib in Resources */,
 				BDB06E301BD4A95B006B4929 /* Assets.xcassets in Resources */,
 				BDB06E2E1BD4A95B006B4929 /* Main.storyboard in Resources */,
+				BD36A1C51BD7657800871F07 /* CustomSupraCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD36A1C41BD7657800871F07 /* CustomSupraCell.swift in Sources */,
 				BDB06E2B1BD4A95B006B4929 /* DetailViewController.swift in Sources */,
+				BDA5C2D31BD763700068BFFE /* SupraExtensions.swift in Sources */,
 				BDA5C2D11BD75D7F0068BFFE /* CustomSwipeCell.swift in Sources */,
 				BDB06E3C1BD4A998006B4929 /* SupraCell.swift in Sources */,
 				BDB06E291BD4A95B006B4929 /* MasterViewController.swift in Sources */,
