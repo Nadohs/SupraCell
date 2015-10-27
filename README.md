@@ -1,6 +1,12 @@
-# SupraCell
+# SupraCell ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 
 SupraCell is cell/xib template designed to make swipe-able cell design easier by putting the buttons and main content all on one view.  
+
+
+
+![demo_swipe](https://github.com/Nadohs/SupraCell/blob/master/Media/demo_1.gif)
+
+
 
 
 ###Installation
@@ -8,11 +14,16 @@ SupraCell is cell/xib template designed to make swipe-able cell design easier by
 **~/Users/USERNAME/Library/Developer/Xcode/Templates/**
 
 ###Usage
+
+
+![template](https://github.com/Nadohs/SupraCell/blob/master/Media/template.png)
+
+
 1)Create a new file and select the SupraCell tab.
 
 2)Before creating your first NewSupraCell from template create a BaseSupraCell to add the base class for your custom cell class.
 
-3)Create a NewSupraCell from template, and design cell in xib (see design section) 
+3)Create a NewSupraCell from template, and design cell in xib [(see design section)](#Design) 
 
 4)Add cell to UITableView in the normal way etc.
 If the xib name and cellIdentifer name are the same can use `tableView.useCell(identifier:String)`
@@ -20,6 +31,8 @@ If the xib name and cellIdentifer name are the same can use `tableView.useCell(i
 ` tableView.useCell("FirstSupraCell")`
 
 ###Design
+
+![design](https://github.com/Nadohs/SupraCell/blob/master/Media/cell1.png)
 
 Cell is separated into 3 views
 
