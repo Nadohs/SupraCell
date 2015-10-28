@@ -1,36 +1,52 @@
-# SupraCell
+# SupraCell ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 
-SupraCell is cell/xib template designed to make swipe-able cell design easier by putting the buttons and main content all on one view.  
+SupraCell is a cell/xib template designed to make swipe-able cell design easier by lettings you design cell content alongside left/right side content on the same xib.
+
+
+
+![demo_swipe](https://github.com/Nadohs/SupraCell/blob/master/Media/demo_1.gif)
+
+
 
 
 ###Installation
-1)Move contents of *Template* folder into the path below, replacing USERNAME with yours.
+  * Move contents of *Template* folder into the path below, replacing USERNAME with yours.
 **~/Users/USERNAME/Library/Developer/Xcode/Templates/**
 
 ###Usage
-1)Create a new file and select the SupraCell tab.
 
-2)Before creating your first NewSupraCell from template create a BaseSupraCell to add the base class for your custom cell class.
 
-3)Create a NewSupraCell from template, and design cell in xib (see design section) 
+![template](https://github.com/Nadohs/SupraCell/blob/master/Media/template.png)
 
-4)Add cell to UITableView in the normal way etc.
-If the xib name and cellIdentifer name are the same can use `tableView.useCell(identifier:String)`
-**NOTE:**template makes these the same by default
+
+  * Create a new file and select the SupraCell tab.
+
+  * Before creating your first **NewSupraCell** from template create a **BaseSupraCell** to add the base class for your custom cell.
+
+  * Create a **NewSupraCell** from template and design cell in .xib [(see design section)](#Design) 
+
+  * Add cell to **UITableView**, registering nib and creating in **cellForIndexPath**.
+If the xib and cellIdentifer name are the same you can use `tableView.useCell(identifier:String)` to register your custom cell/xib pair.
+
+**NOTE:** template makes these the same name by default
+**i.e.**
 ` tableView.useCell("FirstSupraCell")`
 
 ###Design
 
-Cell is separated into 3 views
+![design](https://github.com/Nadohs/SupraCell/blob/master/Media/cell1.png)
 
-|---leftView---||---mainView--||---rightView--|
+Cell is separated into 3 views:
+
+**|---leftView---||---mainView--||---rightView--|**
 
 These views adjust to fit the tableView, so you should use autolayouts to constrain your views within these.
 
 The autolayouts are already preset for these such that:
 
-1)mainView width is tableView width.
-2)leftView/rightView widths are fixed, but you can adjust them accordingly
+  * mainView width is tableView width.
+
+  * leftView/rightView widths are fixed, but you can adjust them accordingly
 
 
 
