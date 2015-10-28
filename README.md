@@ -4,7 +4,7 @@ SupraCell is a cell/xib template designed to make swipe-able cell design easier 
 
 
 
-![demo_swipe](https://github.com/Nadohs/SupraCell/blob/master/Media/demo_1.gif)
+![demo_swipe](https://github.com/Nadohs/SupraCell/blob/master/Media/demo_2.gif)
 
 
 
