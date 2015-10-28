@@ -14,6 +14,13 @@ let kThrsholdMax:CGFloat  = 22
 let kLockSlack:CGFloat    = 100
 
 
+extension UITableView {
+    func useCell(identifier:String){
+        let nib = UINib(nibName: identifier, bundle: nil)
+        self.registerNib(nib, forCellReuseIdentifier: identifier)
+    }
+}
+
 enum FitStyle {
     case Fixed, Flex, Spaced
 }
@@ -44,7 +51,8 @@ enum LockLocation{
     }
 }
 
-class SupraCell: UITableViewCell {
+class SupraCell : UITableViewCell {
+    
     
     @IBOutlet weak var leftView:  UIView!
     @IBOutlet weak var mainView:  UIView!
@@ -52,7 +60,10 @@ class SupraCell: UITableViewCell {
     
     @IBOutlet weak var mainViewAxisX: NSLayoutConstraint!
     @IBOutlet weak var mainViewWidth: NSLayoutConstraint!
-
+    
+    
+    var otherTouches:[UIGestureRecognizer] = []
+    
     
     var leftAnchorPos:CGFloat   = 0
     var rightAnchorPos:CGFloat  = 0
@@ -98,6 +109,8 @@ class SupraCell: UITableViewCell {
     }
     
     
+    
+    
     //MARK: - Frame/Anchor positioning -
     
     func adjustFramePositioning(){
@@ -106,9 +119,9 @@ class SupraCell: UITableViewCell {
         rightAnchorPos = -self.frame.width
         print(rightAnchorPos)
     }
-
     
-
+    
+    
     func offsetLock() -> CGFloat{
         
         let constant = mainViewAxisX.constant
@@ -187,13 +200,13 @@ class SupraCell: UITableViewCell {
             startPoint = p
             switch lockPos{
             case .Left:
-                startPoint.x -= leftAnchorPos
+                startPoint.x -= 2*leftAnchorPos
             case .Right:
-                startPoint.x -= rightAnchorPos
+                startPoint.x -= 2*rightAnchorPos
             case .Center:
                 startPoint.x += 0
             }
-
+            
             if let width = mainViewAxisX?.constant{
                 startPoint.x += width
             }
@@ -207,7 +220,7 @@ class SupraCell: UITableViewCell {
         if brokenThreshold(dif){
             return
         }
-        
+        killOtherTouches()
         if !threshold {
             threshold = true
         }
@@ -229,6 +242,32 @@ class SupraCell: UITableViewCell {
     
     override func setHighlighted(highlighted: Bool, animated: Bool){
         
+    }
+    
+    
+    //MARK: - Manager Other Touches -
+    
+    
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        super.touchesMoved(touches, withEvent: event)
+        
+        otherTouches.removeAll()
+        
+        let gests = touches.flatMap{$0.gestureRecognizers}.flatMap{$0}
+        
+        for gest in gests{
+            if gest == longGest{
+                print("longGEST!!")
+            }else{
+                otherTouches.append(gest)
+                print("gest = ", gest)
+            }
+        }
+    }
+    
+    
+    func killOtherTouches(){
+        otherTouches.forEach { $0.enabled = false; $0.enabled = true}
     }
     
     
