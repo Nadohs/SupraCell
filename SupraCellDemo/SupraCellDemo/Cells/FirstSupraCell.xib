@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -56,22 +57,24 @@
                         <rect key="frame" x="344" y="0.0" width="320" height="98.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="On4-tN-rwV">
-                                <rect key="frame" x="89" y="17" width="171" height="24"/>
+                                <rect key="frame" x="94" y="27.5" width="166" height="24"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="oXd-tx-ubH">
-                                <rect key="frame" x="14" y="12" width="75" height="74.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="oXd-tx-ubH">
+                                <rect key="frame" x="5" y="5" width="89" height="88.5"/>
                                 <animations/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="oXd-tx-ubH" secondAttribute="height" multiplier="1:1" id="iuL-5Q-tF2"/>
                                     <constraint firstAttribute="height" constant="74.5" id="u6x-41-nnN"/>
                                     <constraint firstAttribute="width" constant="75" id="wtZ-8O-fir"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="u6x-41-nnN"/>
+                                        <exclude reference="wtZ-8O-fir"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -82,11 +85,11 @@
                             <constraint firstAttribute="trailing" secondItem="On4-tN-rwV" secondAttribute="trailing" constant="60" id="1cM-jS-eIh"/>
                             <constraint firstAttribute="width" constant="320" id="4nS-DA-nOK"/>
                             <constraint firstItem="oXd-tx-ubH" firstAttribute="top" secondItem="1s9-wW-S2A" secondAttribute="top" constant="12" id="8zZ-6J-tIw"/>
-                            <constraint firstItem="oXd-tx-ubH" firstAttribute="leading" secondItem="1s9-wW-S2A" secondAttribute="leading" constant="14" id="J7O-e0-dHa"/>
-                            <constraint firstAttribute="bottom" secondItem="oXd-tx-ubH" secondAttribute="bottom" constant="12" id="PUH-94-c7w"/>
-                            <constraint firstItem="oXd-tx-ubH" firstAttribute="top" secondItem="1s9-wW-S2A" secondAttribute="top" constant="12" id="bSF-cl-BMv"/>
+                            <constraint firstItem="oXd-tx-ubH" firstAttribute="leading" secondItem="1s9-wW-S2A" secondAttribute="leading" constant="5" id="J7O-e0-dHa"/>
+                            <constraint firstAttribute="bottom" secondItem="oXd-tx-ubH" secondAttribute="bottom" constant="5" id="PUH-94-c7w"/>
+                            <constraint firstItem="oXd-tx-ubH" firstAttribute="top" secondItem="1s9-wW-S2A" secondAttribute="top" constant="5" id="bSF-cl-BMv"/>
                             <constraint firstItem="On4-tN-rwV" firstAttribute="leading" secondItem="oXd-tx-ubH" secondAttribute="trailing" id="kOj-sp-LuE"/>
-                            <constraint firstItem="On4-tN-rwV" firstAttribute="centerY" secondItem="1s9-wW-S2A" secondAttribute="centerY" constant="-20" id="xJf-ti-E3Q"/>
+                            <constraint firstItem="On4-tN-rwV" firstAttribute="centerY" secondItem="1s9-wW-S2A" secondAttribute="centerY" constant="-10" id="xJf-ti-E3Q"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -114,17 +117,17 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hot / Cold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrM-cz-THL">
-                        <rect key="frame" x="480" y="50" width="77" height="24"/>
+                        <rect key="frame" x="482.5" y="54.5" width="77" height="24"/>
                         <animations/>
                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <animations/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="nIU-3d-dlS" secondAttribute="trailing" priority="1" id="1nW-55-e1D"/>
-                    <constraint firstItem="BrM-cz-THL" firstAttribute="top" secondItem="On4-tN-rwV" secondAttribute="bottom" constant="8.5" id="8WO-cF-afS"/>
+                    <constraint firstItem="BrM-cz-THL" firstAttribute="top" secondItem="On4-tN-rwV" secondAttribute="bottom" constant="3" id="8WO-cF-afS"/>
                     <constraint firstItem="1s9-wW-S2A" firstAttribute="leading" secondItem="OBD-ti-OS2" secondAttribute="trailing" id="I3c-8t-vpp"/>
                     <constraint firstItem="1s9-wW-S2A" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LIF-k2-ZF9"/>
                     <constraint firstAttribute="bottom" secondItem="nIU-3d-dlS" secondAttribute="bottom" id="RFS-ox-t6v"/>

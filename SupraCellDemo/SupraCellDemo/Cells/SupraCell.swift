@@ -255,14 +255,20 @@ class SupraCell : UITableViewCell {
         
         let gests = touches.flatMap{$0.gestureRecognizers}.flatMap{$0}
         
-            for gest in gests{
-                if gest == longGest{
-                    print("longGEST!!")
-                }else{
-                    otherTouches.append(gest)
-                    print("gest = ", gest)
-                }
+        for gest in gests{
+            if gest == longGest{
+                print("longGEST!!")
+            }else{
+                otherTouches.append(gest)
+                print("gest = ", gest)
             }
+        }
+    }
+    
+    
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        super.touchesEnded(touches, withEvent: event)
+        otherTouches.removeAll()
     }
     
     

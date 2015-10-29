@@ -4,7 +4,7 @@ SupraCell is a cell/xib template designed to make swipe-able cell design easier 
 
 
 
-![demo_swipe](https://github.com/Nadohs/SupraCell/blob/master/Media/demo_2.gif)
+![demo_swipe](https://github.com/Nadohs/SupraCell/blob/master/Media/demo_3.gif)
 
 
 
@@ -29,6 +29,7 @@ SupraCell is a cell/xib template designed to make swipe-able cell design easier 
 If the xib and cellIdentifer name are the same you can use `tableView.useCell(identifier:String)` to register your custom cell/xib pair.
 
 **NOTE:** template makes these the same name by default
+
 **i.e.**
 ` tableView.useCell("FirstSupraCell")`
 
@@ -50,4 +51,9 @@ The autolayouts are already preset for these such that:
 
 
 
-	
+###Todo
+  * Programmatically add required autolayout constraints
+  * Installer for template
+  * Color fading with swipe distance
+  * Swipe to activate action
+
